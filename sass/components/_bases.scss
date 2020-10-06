@@ -1,0 +1,58 @@
+/* BALISES GENERALES */
+html{
+  font-size: 62.5%;
+
+}
+
+body{
+  /* Jeremy a CENTRE la présentation de la MAQUETTE grâce au display: grid et au place-items: center */
+  display: grid;
+  place-items: center;
+
+  background-color: color(bg-main);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../img/cucurbitaces_background.jpg");
+  background-repeat: no-repeat;
+  /*background-position */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+  color: color(txt-ppl);
+  font-family: font(text);
+  font-size: 1.4rem;
+  font-weight: 400;
+
+}
+
+
+
+
+/* CLASSES PRINCIPALES */
+.main-container{
+
+  max-width: value(width-container);
+  border: 1px solid color(bd-elmtPpl);
+  margin-top: 1rem;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid palevioletred;
+}
+.articles-container{
+  display: flex;
+  flex-direction: column;
+  width: value(width-articles-container);
+  background-color: rgba(51, 38, 78, 0.4);
+  border: 1px solid color(bd-elmtSecond);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+/*
+@media screen and (max-width: 640px) {
+  aside{
+    display: none;
+  }
+}
+*/

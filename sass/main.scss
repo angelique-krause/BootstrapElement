@@ -1,0 +1,41 @@
+// Ceci est un début de code, vous pouvez vous en inspirez pour commencer ou bien repartir à zéro!
+
+// Import des variables et fonctions nécessaires
+@charset 'utf-8'; //permet de FORCER l'encodage des caractères spéciaux comme le é à etc. => sassGuideLine
+
+/* +++++++++++++++++++++++++ */
+    /* STYLES GENERAUX */
+/* +++++++++++++++++++++++++ */
+
+// Il faut LIER les fichiers et dossiers css au fichier principal main.scss via les IMPORTS
+
+// ORDRE des fichiers : VARIABLES, reset,functions, base, layout, modules (ou pages), autres ...
+
+@import 'components/variables';
+@import 'components/reset';
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display&family=Vampiro+One&display=swap');
+@import 'components/functions';
+@import 'components/bases';
+
+// Il est possible de LIER également les FONT AWESOME
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import 'components/icon';
+
+// les différents éléments FIXES de la page : header, footer
+@import 'modules/header';
+@import 'modules/footer';
+
+// les différents éléments VARIABLES de la page  index.html
+@import 'modules/carrousel';
+@import 'modules/article1';
+// @import 'modules/aside';
+
+// les éléments sur les différentes PAGES
+@import 'modules/home';
+@import 'modules/pageArticleDetail';
+@import 'modules/test';
+
+
+
+

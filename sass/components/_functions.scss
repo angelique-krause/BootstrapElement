@@ -1,0 +1,14 @@
+/* les FONCTIONS dans le projet */
+@function color($color-name){
+  @return map-get($colors, $color-name)
+};
+
+@function value($value-name){
+  @return map-get($values, $value-name)
+};
+
+@function font( $font-name){
+  @return map-get($fonts, $font-name)
+};
+
+
